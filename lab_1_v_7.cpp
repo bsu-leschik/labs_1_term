@@ -14,7 +14,6 @@ int main() {
     double limit;
     bool plus = false;
 
-
     cout << "Write x, k" << endl;
     cin >> x >> k;
     if (x >= 1 || x <= -1) {
@@ -40,12 +39,12 @@ int main() {
 
     cout << x << endl;
 
-    ideal_result = 1/pow((1+x),3);
-    cout << fixed << setprecision(k) <<  ideal_result << endl;
+    ideal_result = 1 / pow((1 + x), 3);
+    cout << fixed << setprecision(k) << ideal_result << endl;
 
 
-    cout << "Result calculated with help of Taylor series: " << fixed << setprecision(k) <<  result << endl;
-    cout << "Result calculated with simple formula: " << fixed << setprecision(k) << 1/ideal_result << endl;
+    cout << "Result calculated with help of Taylor series: " << fixed << setprecision(k) << result << endl;
+    cout << "Result calculated with simple formula: " << fixed << setprecision(k) << 1 / ideal_result << endl;
     cout << "Difference: " << fixed << setprecision(k) << result - ideal_result << endl;
     return 0;
 }
